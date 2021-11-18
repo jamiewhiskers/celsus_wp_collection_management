@@ -2,8 +2,8 @@
 Wordpress plugin for small collection management based on AMaGA Victoria small museum's cataloguing manual
 
 #updates
-Version 0.1
-Allows adding of items according to the AMaGA cataloguing template, shows individual items
+#Version 0.1
+#Allows adding of items according to the AMaGA cataloguing template, shows individual items
 
 
 
