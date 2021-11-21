@@ -270,31 +270,31 @@ add_filter('single_template', 'ccms_single_template');
 				esc_attr( $field['name'] ),
 				esc_html( $field['title'] )
 			);
-            if(esc_attr( $field['type']=="text")){
-			printf( '<input name="%1$s" type="%2$s" value="%3$s" class="%4$s" placeholder="%5$s"> ',
-				esc_attr( $field['name'] ),
-				esc_attr( $field['type'] ),
-				esc_attr( $value ),
-				esc_attr( $field['class'] ),
-				esc_attr( $field['desc'] )
-			);
-            }elseif(esc_attr( $field['type']=="area")){
-			printf('<textarea id="%2$s" name="%1$s" rows="4" cols="50" class="%4$s">%5$s</textarea>',
-				esc_attr( $field['name'] ),
-				esc_attr( $field['type'] ),
-				esc_attr( $value ),
-				esc_attr( $field['class'] ),
-				esc_attr( $field['desc'] )
-			);               
-            }elseif(esc_attr( $field['type']=="date")){
-			printf('<input name="%1$s" type="%2$s" value="%3$s" class="%4$s" placeholder="%5$s">',
-				esc_attr( $field['name'] ),
-				esc_attr( $field['type'] ),
-				esc_attr( $value ),
-				esc_attr( $field['class'] ),
-				esc_attr( $field['desc'] )
-			);
-            }
+			if(esc_attr( $field['type']=="text")){
+				printf( '<input name="%1$s" type="%2$s" value="%3$s" class="%4$s" placeholder="%5$s"> ',
+					esc_attr( $field['name'] ),
+					esc_attr( $field['type'] ),
+					esc_attr( $value ),
+					esc_attr( $field['class'] ),
+					esc_attr( $field['desc'] )
+				);
+			}elseif(esc_attr( $field['type']=="area")){
+				printf('<textarea id="%2$s" name="%1$s" rows="4" cols="50" class="%4$s">%5$s</textarea>',
+					esc_attr( $field['name'] ),
+					esc_attr( $field['type'] ),
+					esc_attr( $value ),
+					esc_attr( $field['class'] ),
+					esc_attr( $field['desc'] )
+				);               
+			}elseif(esc_attr( $field['type']=="date")){
+				printf('<input name="%1$s" type="%2$s" value="%3$s" class="%4$s" placeholder="%5$s">',
+					esc_attr( $field['name'] ),
+					esc_attr( $field['type'] ),
+					esc_attr( $value ),
+					esc_attr( $field['class'] ),
+					esc_attr( $field['desc'] )
+				);
+			}
 
 			echo '</div>';
 		}
